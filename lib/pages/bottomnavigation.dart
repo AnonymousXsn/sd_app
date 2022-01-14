@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sd_app/pages/leaderboard.dart';
+import 'package:sd_app/home.dart';
+
 
 class bottomnavigationBar extends StatelessWidget {
   const bottomnavigationBar({Key? key}) : super(key: key);
@@ -14,7 +17,13 @@ class bottomnavigationBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => LeaderBoardPage()),
+                    (Route<dynamic> route) => false,
+              );
+                },
               icon:
               const Icon(Icons.leaderboard, color: Colors.grey, size: 30)),
           SizedBox(
@@ -27,7 +36,13 @@ class bottomnavigationBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
                 color: const Color(0xFFED648C)),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyHomePage()),
+                        (Route<dynamic> route) => false,
+                  );
+                },
                 icon: const Icon(Icons.home,
                     color: Colors.white, size: 30)),
           ),
