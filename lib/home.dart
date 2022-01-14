@@ -18,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var height  = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: const Color(0xFF181B2A),
+      backgroundColor: const Color(0xFF181B2A), //0xFF181B2A
       appBar: AppBar(
         title: const Text("Welcome Back"),
         backgroundColor: const Color(0xFF135CEE),
