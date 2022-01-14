@@ -20,6 +20,6 @@ class Cards{
 
 
 List<Cards> cardinfo = [
-  Cards(name: "Aditya", id: "123 456 7890",color: const [Color(0xFFE96443),Color(0xFF904E95)],points: "10000000000000000000000"),
+  Cards(name: "User1223", id: "123 456 7890",color: const [Color(0xFFE96443),Color(0xFF904E95)],points: "10000000000000000000000"),
 
 ];
