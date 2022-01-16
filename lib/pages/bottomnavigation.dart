@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sd_app/pages/leaderboard.dart';
 import 'package:sd_app/home.dart';
+import 'package:sd_app/pages/settings.dart';
 
 
 class bottomnavigationBar extends StatelessWidget {
@@ -51,7 +52,13 @@ class bottomnavigationBar extends StatelessWidget {
           ),
 
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                      (Route<dynamic> route) => false,
+                );
+              },
               icon: const Icon(Icons.settings, color: Colors.grey, size: 30)),
         ],
       ),

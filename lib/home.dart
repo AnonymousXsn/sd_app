@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sd_app/pages/bottomnavigation.dart';
 import 'package:sd_app/pages/cards.dart';
+import 'package:sd_app/pages/settings.dart';
 
 
 
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(
                   height: height*0.02,
                 ),
-                const card(),
+                new card(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
 

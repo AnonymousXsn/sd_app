@@ -21,6 +21,7 @@ class _LeaderBoardPageState extends State<LeaderBoardPage> {
         appBar: AppBar(
           title: const Text("LeaderBoard"),
           backgroundColor: const Color(0xFF135CEE),
+          centerTitle: true,
           elevation: 0,
         ),
         body: SingleChildScrollView(
@@ -45,7 +46,7 @@ class _LeaderBoardPageState extends State<LeaderBoardPage> {
     ),
 
 
-       bottomNavigationBar: const bottomnavigationBar()
+    bottomNavigationBar: const bottomnavigationBar()
 
 
     );
