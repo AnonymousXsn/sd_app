@@ -1,25 +1,23 @@
 import 'package:flutter/cupertino.dart';
 
-class Cards{
+class Cards {
   late List<Color> color;
   late String id;
   late String name;
-  late String  points;
-
-
+  late String points;
 
   Cards({
     required this.name,
     required this.id,
     required this.color,
     required this.points,
-
-});
-
+  });
 }
 
-
 List<Cards> cardinfo = [
-  Cards(name: "User1223", id: "123 456 7890",color: const [Color(0xFFE96443),Color(0xFF904E95)],points: "10000000000000000000000"),
-
+  Cards(
+      name: "User123",
+      id: "123 456 7890",
+      color: const [Color(0xFFE96443), Color(0xFF904E95)],
+      points: "10000000000000000000000"),
 ];
