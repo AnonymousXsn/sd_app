@@ -3,7 +3,6 @@ import 'package:sd_app/pages/leaderboard.dart';
 import 'package:sd_app/home.dart';
 import 'package:sd_app/pages/settings.dart';
 
-
 class bottomnavigationBar extends StatelessWidget {
   const bottomnavigationBar({Key? key}) : super(key: key);
 
@@ -20,13 +19,13 @@ class bottomnavigationBar extends StatelessWidget {
           IconButton(
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
-                context,
-                MaterialPageRoute(builder: (context) => LeaderBoardPage()),
-                    (Route<dynamic> route) => false,
-              );
-                },
-              icon:
-              const Icon(Icons.leaderboard, color: Colors.grey, size: 30)),
+                  context,
+                  MaterialPageRoute(builder: (context) => LeaderBoardPage()),
+                  (Route<dynamic> route) => false,
+                );
+              },
+              icon: const Icon(Icons.leaderboard_rounded,
+                  color: Colors.white, size: 30)),
           SizedBox(
             width: width * 0.2,
           ),
@@ -41,25 +40,25 @@ class bottomnavigationBar extends StatelessWidget {
                   Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(builder: (context) => MyHomePage()),
-                        (Route<dynamic> route) => false,
+                    (Route<dynamic> route) => false,
                   );
                 },
-                icon: const Icon(Icons.home,
+                icon: const Icon(Icons.home_rounded,
                     color: Colors.white, size: 30)),
           ),
           SizedBox(
             width: width * 0.2,
           ),
-
           IconButton(
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => SettingsPage()),
-                      (Route<dynamic> route) => false,
+                  (Route<dynamic> route) => false,
                 );
               },
-              icon: const Icon(Icons.settings, color: Colors.grey, size: 30)),
+              icon: const Icon(Icons.settings_rounded,
+                  color: Colors.white, size: 30)),
         ],
       ),
     );
